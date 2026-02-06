@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon"
         type="image/png"
@@ -22,31 +21,32 @@
 
   <main>
     <div class="card">
-
-      <img src="images/image-product-mobile.jpg"
-           alt="Gabrielle perfume bottle"
-           id="hero-img">
+      <picture class="hero-img">
+        <source media="(min-width:768px)"
+                srcset="/images/image-product-desktop.jpg">
+        <img src="/images/image-product-mobile.jpg"
+             alt="Gabrielle perfume bottle" />
+      </picture>
       <div class="content">
-        <div class="content">
-          <p class="category">Perfume</p>
-          <h1> Gabrielle Essence Eau De Parfum</h1>
-          <p class="description">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge,
-            Perfumer-Creator for the House of CHANEL.
-          </p>
-          <div class="prices">
-            <div class="sale-price"> $149.99</div>
-            <div class="striked-price">$169.99</div>
-          </div>
-          <button class="btn">
-            <img src="/images/icon-cart.svg"
-                 alt=""
-                 id="cart-icon">
-            <span>Add to Cart</span>
-          </button>
+        <p class="category">Perfume</p>
+        <h1> Gabrielle Essence Eau De Parfum</h1>
+        <p class="description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="prices">
+          <div class="sale-price"> $149.99</div>
+          <div class="striked-price">$169.99</div>
         </div>
+        <button class="btn">
+          <img src="/images/icon-cart.svg"
+               alt=""
+               id="cart-icon">
+          <span>Add to Cart</span>
+        </button>
       </div>
+
   </main>
 
 </body>
